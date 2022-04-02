@@ -31,7 +31,7 @@ public class CreateUserTest {
         RestAssured.basePath = BASE_PATH;
     }
 
-    @Test (dataProvider = "getTestData", groups = "api")
+    @Test (dataProvider = "getTestData")
     public void should_CreateUser_When_RequestIsValid(User testUser) throws IOException {
         Response response =
                 given().
